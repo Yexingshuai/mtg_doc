@@ -3,7 +3,7 @@
 ## 概要
 
 本文档描述了Android开发者如何集成Mintegral SDK产品，通过集成MBridge sdk 展示广告创造收益。 
-Mintegral SDK提供了6种广告形式，包括：Banner(横幅广告)、Native(原生广告,原生视频)、Automatic Rending Native（自动渲染原生广告）、RewardVideo（激励性视频）、Interstitial（新插屏广告）、Splash（开屏广告）。   
+Mintegral SDK提供了6种广告形式，包括：Banner(横幅广告)、Native(原生广告,原生视频)、Automatic Rending Native（自动渲染原生广告）、RewardVideo（激励性视频）、Interstitial（新插屏广告）、Splash（开屏广告）。   叶星666666666666666
 
 
 ## 集成前准备
