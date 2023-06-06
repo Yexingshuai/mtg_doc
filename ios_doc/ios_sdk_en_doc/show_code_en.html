@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="./ghpages-materialize.css" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="./prism.css">
+  <link rel="stylesheet" type="text/css" href="./index_mtg.css?ts=2019102101">
+  <style>
+    html {
+      font-family: "Roboto", GillSans, Calibri, Trebuchet, sans-serif;
+      font-size: 14px;
+    }
+
+    @media only screen and (min-width: 993px) {
+      html {
+        font-size: 16px;
+    
+      }
+      
+    }
+    
+    .title {
+        font-size: 13.6px;
+        font-weight: 600;
+        color: #333;
+      }
+    
+    body {
+      padding: 0;
+      background-color: #fff !important;
+    }
+
+    .leng_item {
+      height: 60px;
+      vertical-align: middle;
+      position: relative;
+    }
+
+    .leng_item span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  </style>
+  <title>Show Code</title>
+</head>
+<body>
+  <div id="countryItem" class="f-ilb f-bb">
+    <b class="f-mtn title">Is the product mainly available to users in mainland China?</b>
+    <p class="f-mtn f-mbn">
+      <input class="with-gap" name="group1" type="radio" id="cn"/>
+      <label for="cn">Mainly for users in mainland China</label>
+      <input class="with-gap" name="group1" type="radio" id="en"/>
+      <label for="en">For global users</label>
+    </p>
+  </div>
+  <div style="color: gray; font-size: 13px" >&ensp;&ensp;&ensp;&ensp;<span>Note: Advertising policies and business vary from region to region,</span></div>
+  <div style="color: gray;font-size: 13px" >&ensp;&ensp;&ensp;&ensp;<span>if your product is mainly for users in mainland China,choosing the option 1  </span></div>
+  <div style="color: gray;font-size: 13px" >&ensp;&ensp;&ensp;&ensp;<span>will help you better improve your monetization results.</span></div>
+
+  <p id="countryMessage" data-msg="Please select first" class="f-error-msg f-mtn"></p>
+  <div id="adTypeItem" class="f-ilb f-bb">
+    <b class="f-mtn title">Choose the ad format you want to integrate:</b>
+    <div id="leng_item_container">
+        <span class="leng_item" data-key="reward"><span>Reward Video</span></span>
+        <!-- <span class="leng_item" data1-key="iv"><span>插屏视频</span></span> -->
+        <span class="leng_item" data-key="native"><span>Native</span></span>
+        <span class="leng_item" data-key="auto_rendering_native"><span>Automatic Rending Native</span></span><br>
+        <span class="leng_item" data-key="splash"><span>Splash</span></span>
+        <!-- <span class="leng_item" data1-key="intersitial"><span>插屏广告</span></span><br> -->
+        <span class="leng_item" data-key="banner"><span>Banner</span></span>
+        <!-- <span class="leng_item" data1-key="interactive"><span>试玩广告</span></span> -->
+        <span class="leng_item" data-key="newinterstitial"><span>newInterstitial</span></span><br>
+    </div>
+  </div>
+  <p id="adTypeMessage" data-msg="Please select first" class="f-error-msg f-mtn"></p>
+  <div id="wayItem" class="f-ilb f-bb">
+    <b class="f-mtn title">Use CocoaPod for interation? </b>
+    <p class="f-mtn f-mbn">
+       <input class="with-gap" name="group2" type="radio" id="Cocoapods"/>
+      <label for="Cocoapods">Yes(propose)</label>
+
+      <input class="with-gap" name="group2" type="radio" id="Framework"/>
+      <label for="Framework">No</label>
+     
+    </p>
+  </div>
+  <p id="wayMessgae" data-msg="Please select first" class="f-error-msg f-mtn"></p>
+ 
+
+  <button onclick="getCode()" class="m-getcode-btn">Integrate</button>
+  <p id="framework" class="f-dn">
+     Please first
+    <a href="https://github.com/Mintegral-official/MintegralAdSDK-iOS-new/releases
+" target="_blank">Download SDK</a>
+    first and then import the corresponding SDK file according to the prompts.
+  </p>
+
+
+  <p class="f-dn" id="code_prefix_arr">
+// Put the following framework files into a static library
+
+</p>
+
+  <p class="f-dn" id="code_prefix_gradle">// Add the following code to your project's Podfile
+
+</p>
+  <div class="f-mb-lg f-mt f-dn" id="coder_area_container">
+    <pre>
+      <code class="java language-java" id="code_area" data-gradie="  ">
+      </code>
+    </pre>
+  </div>
+  <textarea style="width: 1px;height: 1px;opacity: 0;" name="h__code" id="h__code"></textarea>
+  <script type="text/javascript" src="https://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/js/materialize.2018.1.js"></script>
+  <script type="text/javascript" src="./prism.js"></script>
+  <script type="text/javascript" src="show_code.js"></script>
+</body>
+</html>

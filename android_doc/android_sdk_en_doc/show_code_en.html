@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="./ghpages-materialize.css" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="./prism.css">
+  <link rel="stylesheet" type="text/css" href="./index_mtg.css?ts=2019102101">
+  <style>
+    html {
+      font-family: "Roboto", GillSans, Calibri, Trebuchet, sans-serif;
+      font-size: 14px;
+    }
+
+    @media only screen and (min-width: 993px) {
+      html {
+        font-size: 16px;
+      }
+    }
+    
+    .title {
+        font-size: 13.6px;
+        font-weight: 600;
+        color: #333;
+      }
+    
+    body {
+      padding: 0;
+      background-color: #fff !important;
+    }
+    
+    .leng_item {
+      height: 55px;
+      vertical-align: middle;
+      position: relative;
+    }
+
+    .leng_item span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  </style>
+  <title>Show Code</title>
+</head>
+<body>
+<!--   <div id="countryItem" class="f-ilb f-bb">
+    <p class="f-mtn title">Does your app release on the google play?</p>
+    <p class="f-mtn f-mbn">
+      <input class="with-gap" name="group1" type="radio" id="en"/>
+      <label for="en">Yes</label>
+      <input class="with-gap" name="group1" type="radio" id="cn"/>
+      <label for="cn">No</label>
+    </p>
+  </div> -->
+  <p id="countryMessage" data-msg="Required" class="f-error-msg f-mtn"></p>
+  <div id="adTypeItem" class="f-ilb f-bb">
+    <p class="f-mtn title">Choose the ad format you want to integrate:</p>
+    <div id="leng_item_container">
+        <span class="leng_item" data-key="reward"><span>Reward Video</span></span>
+        <!-- <span class="leng_item" data1-key="iv"><span>Intersitial Video</span></span> -->
+        <span class="leng_item" data-key="native"><span>Native</span></span>
+        <span class="leng_item" data-key="auto_rendering_native"><span>Automatic Rending Native</span></span><br>
+        <span class="leng_item" data-key="splash"><span>Splash</span></span>
+        <!-- <span class="leng_item" data1-key="intersitial"><span>Intersititial Static</span></span><br> -->
+        <span class="leng_item" data-key="banner"><span>Banner</span></span>
+        <!-- <span class="leng_item" data1-key="interactive"><span>Interactive</span></span> -->
+        <span class="leng_item" data-key="newinterstitial"><span>newInterstitial</span></span><br>
+        <span class="leng_item f-dn" data-key="appwall" id="appwall"><span>Appwall</span></span>
+
+    </div>
+  </div>
+  <p id="adTypeMessage" data-msg="Required" class="f-error-msg f-mtn"></p>
+  <div id="wayItem" class="f-ilb f-bb">
+    <p class="f-mtn title">Choose your integration way:</p>
+    <p class="f-mtn f-mbn">
+      <input class="with-gap" name="group2" type="radio" id="AAR"/>
+      <label for="AAR">AAR</label>
+      <input class="with-gap" name="group2" type="radio" id="Gradie"/>
+      <label for="Gradie">Gradle</label>
+    </p>
+  </div>
+  <p id="wayMessgae" data-msg="Required" class="f-error-msg f-mtn"></p>
+<!-- added AndroidX choice below-->
+<!--   <div id="isSupportX" class="f-ilb f-bb">
+    <p class="f-mtn title">Does your app use the AndroidX version?</p>
+    <p class="f-mtn f-mbn">
+      <input class="with-gap" name="group3" type="radio" id="androidX"/>
+      <label for="androidX">Yes</label>
+      <input class="with-gap" name="group3" type="radio" id="support"/>
+      <label for="support">No</label>
+    </p>
+  </div> -->
+  <p id="androidX_Message" data-msg="Required" class="f-error-msg f-mtn"></p>
+<!-- added AndroidX choice above-->
+  <button onclick="getCode()" class="m-getcode-btn">Integrate</button>
+
+<!--   <p id="aar_link_en" class="f-dn">
+
+    <a href="http://cdn-adn.rayjump.com/cdn-adn/v2/portal/20/03/03/14/40/5e5dfbda811fa.zip">Download SDK</a>
+    first and then import the corresponding SDK file according to the prompts.
+  </p>
+  <p id="aar_link_cn" class="f-dn">
+
+    <a href="http://cdn-adn.rayjump.com/cdn-adn/v2/portal/20/03/03/14/36/5e5dfb0534055.zip">Download SDK</a>
+    first and then import the corresponding SDK file according to the prompts.
+  </p> -->
+<!-- below added -->
+  <p id="aar_link_en_android_x" class="f-dn">
+     
+    <a href="https://cdn-adn.rayjump.com/cdn-adn/v2/portal/23/05/15/17/41/6461fe46f3974.zip
+">Download SDK</a>
+    first and then import the corresponding SDK file according to the prompts.
+  </p>
+  <p id="aar_link_cn_android_x" class="f-dn">
+     
+    <a href="https://cdn-adn.rayjump.com/cdn-adn/v2/portal/23/05/15/17/41/6461fe4e9e757.zip
+">Download SDK</a>
+    first and then import the corresponding SDK file according to the prompts.
+  </p>
+
+  <p id="aar_link_en_support" class="f-dn">
+     
+    <a href="
+">Download SDK</a>
+    first and then import the corresponding SDK file according to the prompts.
+  </p>
+  <p id="aar_link_cn_support" class="f-dn">
+     
+    <a href="https://cdn-adn.rayjump.com/cdn-adn/v2/portal/23/05/15/17/46/6461ff6c98898.zip
+">Download SDK</a>
+    first and then import the corresponding SDK file according to the prompts.
+  </p>
+<!-- above added -->
+
+  <p class="f-dn" id="code_prefix_arr">// Please copy the aar or jar files below in the SDK archive to your project Module/libs folder.
+// If you choose jar files, please put the corresponding res folder into the res folder of your Android project.
+
+</p>
+  <p class="f-dn" id="code_prefix_gradle">// Please add the code below to your project's build.gradle
+
+</p>
+  <div class="f-mb-lg f-mt f-dn" id="coder_area_container">
+    <pre>
+      <code class="java language-java" id="code_area" data-gradie='  ' data-aar='  '>
+      </code>
+    </pre>
+  </div>
+  <textarea style="width: 1px;height: 1px;opacity: 0;" name="h__code" id="h__code"></textarea>
+  <p class="f-dn" id="codes_tips">//Please upgrade Android X</p>
+  <script type="text/javascript" src="https://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/js/materialize.2018.1.js"></script>
+  <script type="text/javascript" src="./prism.js"></script>
+  <script type="text/javascript" src="show_code.js"></script>
+</body>
+</html>
