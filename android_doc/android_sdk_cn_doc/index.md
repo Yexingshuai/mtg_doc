@@ -67,6 +67,12 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
 
 ## 获取SDK
 
+{% raw %}
+<div>
+  <button onclick="alert('Hello, GitBook!')">Click me</button>
+</div>
+{% endraw %}
+
 请根据以下提示选择您的集成方式，点击“开始集成”获取SDK    
 <iframe data-src="show_code.html" id="iframe_show_code_android"></iframe>
 {% include "show_code.html" %}
