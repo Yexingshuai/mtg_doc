@@ -67,152 +67,21 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
 
 ## 获取SDK
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link type="text/css" rel="stylesheet" href="./ghpages-materialize.css" media="screen,projection" />
-  <link rel="stylesheet" type="text/css" href="./prism.css">
-  <link rel="stylesheet" type="text/css" href="./index_mtg.css?ts=2019102101">
-  <style>
-    html {
-      font-family: "Roboto", GillSans, Calibri, Trebuchet, sans-serif;
-      font-size: 14px;
-    }
-
-    @media only screen and (min-width: 993px) {
-      html {
-        font-size: 16px;
-    
-      }
-      
-    }
-    
-    .title {
-        font-size: 13.6px;
-        font-weight: 600;
-        color: #333;
-      }
-    
-    body {
-      padding: 0;
-      background-color: #fff !important;
-    }
-
-    .leng_item {
-      height: 60px;
-      vertical-align: middle;
-      position: relative;
-    }
-
-    .leng_item span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-    }
-  </style>
-  <title>Show Code</title>
+  <meta charset="utf-8">
+  <title>My GitBook Page</title>
 </head>
 <body>
-<!--   <div id="countryItem" class="f-ilb f-bb">
-    <b class="f-mtn title">您的应用是否上架google play？</b>
-    <p class="f-mtn f-mbn">
-      <input class="with-gap" name="group1" type="radio" id="en"/>
-      <label for="en">是</label>
-      <input class="with-gap" name="group1" type="radio" id="cn"/>
-      <label for="cn">否</label>
-    </p>
-  </div> -->
-  <p id="countryMessage" data-msg="请先选择" class="f-error-msg f-mtn"></p>
-  <div id="adTypeItem" class="f-ilb f-bb">
-    <b class="f-mtn title">选择您要集成的广告类型：</b>
-    <div id="leng_item_container">
-        <span class="leng_item" data-key="reward"><span>激励视频</span></span>
-        <!-- <span class="leng_item" data1-key="iv"><span>插屏视频</span></span> -->
-        <span class="leng_item" data-key="native"><span>原生广告</span></span>
-        <span class="leng_item" data-key="auto_rendering_native"><span>自动渲染原生</span></span><br>
-        <span class="leng_item" data-key="splash"><span>开屏广告</span></span>
-        <!-- <span class="leng_item" data1-key="intersitial"><span>插屏广告</span></span><br> -->
-        <span class="leng_item" data-key="banner"><span>横幅广告</span></span>
-        <!-- <span class="leng_item" data1-key="interactive"><span>试玩广告</span></span> -->
-        <span class="leng_item" data-key="newinterstitial"><span>新插屏(建议)</span></span><br>
-        <span class="leng_item f-dn" data-key="appwall" id="appwall"><span>应用墙</span></span>
-    </div>
-  </div>
-  <p id="adTypeMessage" data-msg="请先选择" class="f-error-msg f-mtn"></p>
-  <div id="wayItem" class="f-ilb f-bb">
-    <b class="f-mtn title">选择您的集成方式：</b>
-    <p class="f-mtn f-mbn">
-      <input class="with-gap" name="group2" type="radio" id="AAR"/>
-      <label for="AAR">AAR</label>
-      <input class="with-gap" name="group2" type="radio" id="Gradie"/>
-      <label for="Gradie">Gradle</label>
-    </p>
-  </div>
-  <p id="wayMessgae" data-msg="请先选择" class="f-error-msg f-mtn"></p>
- 
-<!--   <div id="isSupportX" class="f-ilb f-bb">
-    <b class="f-mtn title">您的应用是否使用AndroidX版本？</b>
-    <p class="f-mtn f-mbn">
-      <input class="with-gap" name="group3" type="radio" id="androidX"/>
-      <label for="androidX">是</label>
-      <input class="with-gap" name="group3" type="radio" id="support"/>
-      <label for="support">否</label>
-    </p>
-  </div> -->
-  <p id="androidX_Message" data-msg="请先选择" class="f-error-msg f-mtn"></p>
+  <h1>Hello, GitBook!</h1>
+  <p>This is my first GitBook page.</p>
+  <button onclick="sayHello()">Click me</button>
 
-  <button onclick="getCode()" class="m-getcode-btn">开始集成</button>
-  <p id="aar_link_en_android_x" class="f-dn">
-     请先
-    <a href="https://cdn-adn.rayjump.com/cdn-adn/v2/portal/23/05/15/17/41/6461fe46f3974.zip
-">下载SDK</a>
-    ，再根据提示导入对应的SDK文件
-  </p>
-  <p id="aar_link_cn_android_x" class="f-dn">
-     请先
-    <a href="https://cdn-adn.rayjump.com/cdn-adn/v2/portal/23/05/15/17/41/6461fe4e9e757.zip
-">下载SDK</a>
-    ，再根据提示导入对应的SDK文件
-  </p>
-
- <p id="aar_link_en_support" class="f-dn">
-     请先
-    <a href="https://cdn-adn.rayjump.com/cdn-adn/v2/portal/21/04/27/20/36/6088055890564.zip
-">下载SDK</a>
-    ，再根据提示导入对应的SDK文件
-  </p>
-  <p id="aar_link_cn_support" class="f-dn">
-     请先
-    <a href="https://cdn-adn.rayjump.com/cdn-adn/v2/portal/23/05/15/17/46/6461ff6c98898.zip
-">下载SDK</a>
-    ，再根据提示导入对应的SDK文件
-  </p>
-
-
-  <p class="f-dn" id="code_prefix_arr">// 将SDK压缩包内的aar或jar文件复制到Application Module/libs文件夹中
-// 注意：如果您使用的是jar包，请将与之对应的res也放入到你Android项目工程的res下
-
-</p>
-
-  <p class="f-dn" id="code_prefix_gradle">// 请将下方代码添加到项目的build.gradle中
-
-</p>
-  <div class="f-mb-lg f-mt f-dn" id="coder_area_container">
-    <pre>
-      <code class="java language-java" id="code_area" data-gradie="  ">
-      </code>
-    </pre>
-  </div>
-  <textarea style="width: 1px;height: 1px;opacity: 0;" name="h__code" id="h__code"></textarea>
-  <p class="f-dn" id="codes_tips">// 请升级Android X</p>
-  <script type="text/javascript" src="https://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/js/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="https://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/js/materialize.2018.1.js"></script>
-  <script type="text/javascript" src="./prism.js"></script>
-  <script type="text/javascript" src="show_code.js"></script>
+  <script>
+    function sayHello() {
+      alert('Hello, GitBook!');
+    }
+  </script>
 </body>
 </html>
 
