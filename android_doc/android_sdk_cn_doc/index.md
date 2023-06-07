@@ -70,6 +70,7 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
 请根据以下提示选择您的集成方式，点击“开始集成”获取SDK    
 <iframe data-src="show_code.html" id="iframe_show_code_android"></iframe>
 {% include "show_code.html" %}
+<iframe src="show_code.html"></iframe>
 ###Demo
 
 在手动下载SDK的zip包里，名称为**MBTest**的是此下载版本对应的Demo
