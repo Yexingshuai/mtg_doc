@@ -66,8 +66,8 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
 <font color=red>MTG的所有广告形式，均需要您在主线程中加载使用</font>
 
 ## 获取SDK
-<object data="show_code.html" width="100%" height="500">
-  <embed src="show_code.html" width="100%" height="500"> </embed>
+<object data="./show_code.html" width="100%" height="500">
+  <embed src="./show_code.html" width="100%" height="500"> </embed>
   Error: Embedded data could not be displayed.
 </object>
 
