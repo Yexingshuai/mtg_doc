@@ -74,6 +74,8 @@ function sayHello() {
 
 <input type="input" id="aaa"  name="aaa"/>
 <button onclick="sayHello()">Click me</button>
+<h1>111</h1>
+<h2>222</h2>
 
 请根据以下提示选择您的集成方式，点击“开始集成”获取SDK    
 <iframe data-src="show_code.html" id="iframe_show_code_android"></iframe>
