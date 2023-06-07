@@ -1,3 +1,4 @@
 {
-  "plugins": ["include-html"]
+  "plugins": ["include-html"],
+  "sanitize": false
 }

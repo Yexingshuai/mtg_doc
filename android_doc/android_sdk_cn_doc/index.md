@@ -72,6 +72,9 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
 {% include "show_code.html" %}
 <iframe src="show_code.html"></iframe>
 {% include_codeblock "show_code.html" %}
+{% include "./show_code.html" %}
+{% include "android_doc/android_sdk_cn_doc/show_code.html" %}
+{% include "./android_doc/android_sdk_cn_doc/show_code.html" %}
 ###Demo
 
 在手动下载SDK的zip包里，名称为**MBTest**的是此下载版本对应的Demo
