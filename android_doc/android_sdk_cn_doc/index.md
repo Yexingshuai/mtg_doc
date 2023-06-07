@@ -66,9 +66,10 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
 <font color=red>MTG的所有广告形式，均需要您在主线程中加载使用</font>
 
 ## 获取SDK
-{% raw %}
-{% include "show_code.html" %}
-{% endraw %}
+<object data="https://raw.githubusercontent.com/Yexingshuai/mtg_doc/main/android_doc/android_sdk_cn_doc/show_code.html" width="100%" height="500">
+  <embed src="https://raw.githubusercontent.com/Yexingshuai/mtg_doc/main/android_doc/android_sdk_cn_doc/show_code.html" width="100%" height="500"> </embed>
+  Error: Embedded data could not be displayed.
+</object>
 
 请根据以下提示选择您的集成方式，点击“开始集成”获取SDK    
 <iframe data-src="show_code.html" id="iframe_show_code_android"></iframe>
