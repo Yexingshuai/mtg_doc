@@ -66,13 +66,24 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
 <font color=red>MTG的所有广告形式，均需要您在主线程中加载使用</font>
 
 ## 获取SDK
-<pre><code>
-function sayHello() {
-  alert('Hello, GitBook!');
-}
-</code></pre>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My GitBook Page</title>
+</head>
+<body>
+  <h1>Hello, GitBook!</h1>
+  <p>This is my first GitBook page.</p>
+  <button onclick="sayHello()">Click me</button>
 
-<button onclick="sayHello()">Click me</button>
+  <script>
+    function sayHello() {
+      alert('Hello, GitBook!');
+    }
+  </script>
+</body>
+</html>
 
 请根据以下提示选择您的集成方式，点击“开始集成”获取SDK    
 <iframe data-src="show_code.html" id="iframe_show_code_android"></iframe>
