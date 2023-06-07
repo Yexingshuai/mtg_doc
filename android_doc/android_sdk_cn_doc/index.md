@@ -75,6 +75,9 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
 {% include "./show_code.html" %}
 {% include "android_doc/android_sdk_cn_doc/show_code.html" %}
 {% include "./android_doc/android_sdk_cn_doc/show_code.html" %}
+<div>
+  <button onclick="alert('Hello, GitBook!')">Click me</button>
+</div>
 ###Demo
 
 在手动下载SDK的zip包里，名称为**MBTest**的是此下载版本对应的Demo
