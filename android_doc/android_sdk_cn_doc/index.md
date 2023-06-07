@@ -67,11 +67,13 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
 
 ## 获取SDK
 
+{% verbatim %}
 <script>
   function sayHello() {
     alert('Hello, GitBook!');
   }
 </script>
+{% endverbatim %}
 
 <button onclick="sayHello()">Click me</button>
 
