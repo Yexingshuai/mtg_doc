@@ -127,7 +127,7 @@ MBridgeSDKFactory.getMBridgeSDK().updateDialogWeakActivity(new WeakReference<Act
     </p>
   </div> -->
  
-请根据以下提示选择您的集成方式，点击“开始集成”获取SDK    
+请根据以下提示选择您的集成方式，点击“开始集成”获取SDK1    
 <div>
   <iframe src="show_code.html" id="iframe_show_code_android" width="100%" height="400px"></iframe>
 </div>
